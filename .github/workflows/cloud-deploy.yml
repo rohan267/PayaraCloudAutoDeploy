@@ -21,8 +21,8 @@ jobs:
     PCL_ENDPOINT: ${{ secrets.PCL_ENDPOINT }}
     PCL_CLIENT_ID: ${{ secrets.PCL_CLIENT_ID }}
   steps:
-      name: Deploy to Payara Cloud
-      uses: payara/cloud-deploy@master
+    - name: Deploy to Payara Cloud
+    - uses: payara/cloud-deploy@master
       with:
         token: ${{ secrets.PCL_AUTH_TOKEN }}
         subscription_name: 'rohan 2025-01-30'
