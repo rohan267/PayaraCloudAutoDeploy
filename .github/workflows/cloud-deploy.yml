@@ -17,10 +17,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      ACTIONS_STEP_DEBUG: true
-      PCL_ENDPOINT: ${{ secrets.PCL_ENDPOINT }}
-      PCL_CLIENT_ID: ${{ secrets.PCL_CLIENT_ID }}
+#  env:
+#    ACTIONS_STEP_DEBUG: true
+#    PCL_ENDPOINT: ${{ secrets.PCL_ENDPOINT }}
+#    PCL_CLIENT_ID: ${{ secrets.PCL_CLIENT_ID }}
+
     steps:
       - name: Deploy to Payara Cloud
         uses: payara/cloud-deploy@master
