@@ -20,13 +20,13 @@ jobs:
     ACTIONS_STEP_DEBUG: true
     PCL_ENDPOINT: ${{ secrets.PCL_ENDPOINT }}
     PCL_CLIENT_ID: ${{ secrets.PCL_CLIENT_ID }}
-    steps:
-      - name: Deploy to Payara Cloud
-        uses: payara/cloud-deploy@master
-        with:
-          token: ${{ secrets.PCL_AUTH_TOKEN }}
-          subscription_name: 'rohan 2025-01-30'
-          namespace: 'start-dev'
-          app_name: 'your-app'
-          artifact_location: '../../../clusterJSP/target/clusterjsp-1-SNAPSHOT.war'
-          deploy: true
+  steps:
+    - name: Deploy to Payara Cloud
+      uses: payara/cloud-deploy@master
+      with:
+        token: ${{ secrets.PCL_AUTH_TOKEN }}
+        subscription_name: 'rohan 2025-01-30'
+        namespace: 'start-dev'
+        app_name: 'your-app'
+        artifact_location: '../../../clusterJSP/target/clusterjsp-1-SNAPSHOT.war'
+        deploy: true
