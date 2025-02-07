@@ -4,15 +4,6 @@ description: 'Deploy ClusterJSP to Cloud on update of master'
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - 'docs/**'
-      - '.github/**'
-      - 'README.adoc'
-      - '**/README.adoc'
-      - 'public/**'
-      - 'static/**'
-      - 'tests/**'
-      -
 
 jobs:
   deploy:
