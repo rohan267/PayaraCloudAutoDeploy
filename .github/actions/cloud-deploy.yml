@@ -3,7 +3,7 @@ description: 'Deploy ClusterJSP to Cloud on update of master'
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths-ignore:
       - 'docs/**'
       - '.github/**'
