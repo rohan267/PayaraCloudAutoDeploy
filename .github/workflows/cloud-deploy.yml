@@ -29,5 +29,5 @@ jobs:
           subscription_name: 'rohan 2025-01-30'
           namespace: 'start-dev'
           app_name: 'your-app'
-          artifact_location: './target/clusterjsp-1-SNAPSHOT.war'
+          artifact_location: './clusterJSP/target/clusterjsp-1-SNAPSHOT.war'
           deploy: true
