@@ -1,0 +1,23 @@
+name: 'Deploy to Payara Cloud'
+description: 'Deploy ClusterJSP to Cloud on update of master'
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - 'docs/**'
+      - '.github/**'
+      - 'README.adoc'
+      - '**/README.adoc'
+      - 'public/**'
+      - 'static/**'
+      - 'tests/**'
+
+uses: payara/actions/cloud-deploy@master
+with:
+  token: ${{ secrets.PCL_AUTH_TOKEN }}
+  subscription_name: 'your-subscription-name'
+  namespace: 'your-namespace'
+  app_name: 'your-app'
+  artifact_location: 'your-artifact.war'
+  deploy: true
