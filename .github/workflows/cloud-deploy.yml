@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Deploy to Payara Cloud
-        uses: cloud-deploy@master
+        uses: actions/cloud-deploy@master
         with:
           token: ${{ secrets.PCL_AUTH_TOKEN }}
           subscription_name: 'your-subscription-name'
