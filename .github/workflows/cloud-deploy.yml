@@ -28,6 +28,6 @@ jobs:
           token: ${{ secrets.PCL_AUTH_TOKEN }}
           subscription_name: 'rohan 2025-01-30'
           namespace: 'start-dev'
-          app_name: 'my-app'
+          app_name: 'my-app2'
           artifact_location: './clusterJSP/target/clusterjsp-1-SNAPSHOT.war'
           deploy: true
