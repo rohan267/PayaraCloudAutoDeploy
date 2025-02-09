@@ -22,6 +22,7 @@ jobs:
           java-version: 21
       - name: Build with Maven
         run: mvn clean package
+        working-directory: ./clusterJSP
       - name: Deploy to Payara Cloud
         uses: payara/cloud-deploy@master
         with:
